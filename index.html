@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form id="reg-form">
+            <div>
+                <label for="firstname">First Name</label>
+                <input class="u-full-width" id="firstname" type="text" name="firstname">
+            </div>
+            <div>
+                <label for="lastname">Last Name</label>
+                <input class="u-full-width" id="lastname" type="text" name="lastname">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input class="u-full-width" id="email" type="text" name="email">
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input class="u-full-width" id="phone" type="text" name="phone">
+            </div>
+            <div>
+                <label class="company">Company</label>
+                <input class="u-full-width" id="company" type="text" name="company">
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="u-full-width">
+            </div>
+        </form>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Company</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="form-data"></tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
